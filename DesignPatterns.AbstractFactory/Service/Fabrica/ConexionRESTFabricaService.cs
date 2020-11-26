@@ -2,7 +2,7 @@
 {
     using DesignPatterns.AbstractFactory.IService;
     using System;
-    public class ConexionRESTFabricaService : IFabricaAbstractaService
+    public class ConexionRESTFabricaService : IAbstractFactoryService
     {
         public IConexionRESTService getREST(String area)
         {

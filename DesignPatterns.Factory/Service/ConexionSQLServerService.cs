@@ -1,20 +1,20 @@
-﻿namespace DesignPatterns.AbstractFactory.Service
+﻿namespace DesignPatterns.Factory.Service
 {
-    using DesignPatterns.AbstractFactory.IService;
+    using DesignPatterns.Factory.IService;
     using System;
     public class ConexionSQLServerService : IConexionBDService
     {
         private String host;
-        private String puerto;
-        private String usuario;
-        private String contrasena;
+        private String port;
+        private String user;
+        private String password;
 
         public ConexionSQLServerService()
         {
             this.host = "localhost";
-            this.puerto = "1433";
-            this.usuario = "postgres";
-            this.contrasena = "123";
+            this.port = "1433";
+            this.user = "postgres";
+            this.password = "123";
         }
         public  void conect()
         {
@@ -33,29 +33,29 @@
         {
             this.host = host;
         }
-        public String getPuerto()
+        public String getPort()
         {
-            return puerto;
+            return port;
         }
-        public void setPuerto(String puerto)
+        public void setPort(String puerto)
         {
-            this.puerto = puerto;
+            this.port = puerto;
         }
-        public String getUsuario()
+        public String getUser()
         {
-            return usuario;
+            return user;
         }
-        public void setUsuario(String usuario)
+        public void setUser(String usuario)
         {
-            this.usuario = usuario;
+            this.user = usuario;
         }
-        public String getContrasena()
+        public String getPassword()
         {
-            return contrasena;
+            return password;
         }
-        public void setContrasena(String contrasena)
+        public void setPassword(String contrasena)
         {
-            this.contrasena = contrasena;
+            this.password = contrasena;
         }
     }
 }

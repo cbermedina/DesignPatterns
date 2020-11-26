@@ -2,7 +2,7 @@
 {
     using DesignPatterns.AbstractFactory.IService;
     using System;
-    public class ConexionBDFabricaService : IFabricaAbstractaService
+    public class ConexionBDFabricaService : IAbstractFactoryService
     {
         public  IConexionBDService getBD(String motor)
         {

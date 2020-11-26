@@ -9,12 +9,12 @@
         {
             Console.WriteLine("Hello World!");
 
-            IFabricaAbstractaService fabricaBD = FactoryProducerService.getFactory("BD");
+            IAbstractFactoryService fabricaBD = FactoryProducerService.getFactory("BD");
             IConexionBDService cxBD1 = fabricaBD.getBD("MYSQL");
 
-            cxBD1.conectar();
+            cxBD1.conect();
 
-            IFabricaAbstractaService fabricaREST = FactoryProducerService.getFactory("REST");
+            IAbstractFactoryService fabricaREST = FactoryProducerService.getFactory("REST");
             IConexionRESTService cxRS1 = fabricaREST.getREST("COMPRAS");
 
             cxRS1.leerURL("https://www.myurl?id=10");

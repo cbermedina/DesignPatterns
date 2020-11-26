@@ -4,19 +4,18 @@
     using System;
     public class FactoryProducerService
     {
-        public static IFabricaAbstractaService getFactory(String tipoFabrica)
+        public static IAbstractFactoryService getFactory(String factoryType)
         {
-            if (tipoFabrica.Equals("BD"))
+            if (factoryType.Equals("BD"))
             {
                 return new ConexionBDFabricaService();
 
             }
-            else if (tipoFabrica.Equals("REST"))
+            else if (factoryType.Equals("REST"))
             {
                 return new ConexionRESTFabricaService();
             }
             return null;
         }
-
     }
 }

@@ -1,8 +1,8 @@
 ﻿
 
-namespace DesignPatterns.AbstractFactory.Service
+namespace DesignPatterns.Factory.Service
 {
-    using DesignPatterns.AbstractFactory.IService;
+    using DesignPatterns.Factory.IService;
     using System;
     public class ConexionMySQLService : IConexionBDService
     {

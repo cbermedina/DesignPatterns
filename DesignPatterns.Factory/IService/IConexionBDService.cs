@@ -1,4 +1,4 @@
-﻿namespace DesignPatterns.AbstractFactory.IService
+﻿namespace DesignPatterns.Factory.IService
 {
     public interface IConexionBDService
 	{
